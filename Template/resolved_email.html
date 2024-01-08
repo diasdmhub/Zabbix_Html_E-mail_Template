@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zabbix Monitoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+
+<style>
+    div {
+        border: 3px solid LightGray;
+        margin: auto;
+        max-width: 700px;
+        padding: 2px 20px 2px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    div div { margin: 0; padding: 0; border: 0; }
+    img { max-width: 328px; }
+    h1, h2, h3, h5, h6 { color: White; }
+    h4 { color: black; }
+    table { width: 100%; }
+    tr:nth-child(even){ background-color: Azure; }
+    tr:hover { background-color: LightGray; }
+    th, td { border-top: 1px solid LightGray; text-align: left; }
+    .green { background-color: ForestGreen; }
+    .red { background-color: Tomato; }
+    .blue { background-color: LightBlue; }
+    .gray { background-color: Gray; color:White; }
+    .light { background-color:LightGray; }
+</style>
+
+</head>
+<body>
+
+<div>
+    <div class="green"><h1>&#9989; ZABBIX EVENT RESOLVED &#9989;</h1></div>
+    <div class="light"><h4>HOST INFORMATION</h4></div>
+    <table>
+        <tr><td>&#128256; Proxy:</td>          <td>{PROXY.NAME}</td></tr>
+        <tr><td>&#127991;&#65039; Name:</td>   <td>{HOST.NAME}</td></tr>
+        <tr><td>&#128187; IP:</td>             <td>{HOST.CONN}</td></tr>
+        <tr><td>&#128221; Description:</td>    <td>{HOST.DESCRIPTION}</td></tr>
+        <tr><td style="width:30%"> </td>       <td> </td></tr>
+    </table>
+    <div class="light"><h4>EVENT DETAILS</h4></div>
+    <table>
+        <tr><td>&#128680; Event:</td>          <td>{EVENT.NAME}</td></tr>
+        <tr><td>&#9888;&#65039; Severity:</td> <td>{TRIGGER.SEVERITY}</td></tr>
+        <tr><td>&#128347; Start:</td>          <td>{EVENT.TIME} from {EVENT.DATE}</td></tr>
+        <tr><td>&#128350; End:</td>            <td>{EVENT.RECOVERY.TIME} from {EVENT.RECOVERY.DATE}</td></tr>
+        <tr><td>&#8987; Duration:</td>         <td>{EVENT.DURATION}</td></tr>
+        <tr><td>&#128178; Value:</td>          <td>{ITEM.VALUE}</td></tr>
+        <tr><td style="width:30%"> </td>       <td> </td></tr>
+    </table>
+</div>
+<div class="gray">&#9749; Zabbix alert - {{TIME}.fmttime(%Y)} &#9749;</div>
+
+</body>
+</html>
