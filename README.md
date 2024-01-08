@@ -1,51 +1,46 @@
-# zabbix-customizable-html-email-template
+# Zabbix HTML E-mail template
 
-### Customizable Zabbix HTML Email Template - Problem/Recovery
+Zabbix HTML Email Template for alert messages. \
+This repository contains a set of customizable HTML templates for use with the Zabbix Email (HTML) media type.
 
----
-
-This repository holds a set of customizable HTML Template to be used with the Zabbix Email HTML MediaType.
+<BR>
 
 ## Requirements
 
----
-Zabbix 4.4 and up
+- [Zabbix DB with UTF-8 encoding](https://www.zabbix.com/documentation/current/en/manual/appendix/install/db_scripts)
+- [Zabbix e-mail Media Type](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media/email) cofigured with the `HTML message format`
+
+<BR>
+
 
 ## Customization
 
-Basically you can customize anything on these HTML templates, from the Logo, Trigger/Host Information, Colours, footer. The only limitation is your HTML or Design Skills :)
+You can customize many HTML tags. From the logo, trigger/host information, colors, footer, etc. \
+One possible limitation is the database encoding as [not all emojis are encoded correctly](https://www.zabbix.com/forum/zabbix-cookbook/413606-coloured-html-email-notification-templates) by the database.
 
-- [html-online](https://html-online.com/editor/)
-- [devexpress](https://demos.devexpress.com/ASPxHtmlEditorDemos/Features/General.aspx)
+> - **It is recommended to use the HTML entity code for emojis. [EmojiGuide](https://emojiguide.org) can help finding the correct codes.**
+> - **You can easily test the HTML code with tools such as ↗️ [W3 School HTML editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello)**
 
-Check "Templates" directory for the HTML Templates
+<BR>
 
-### Sample - HTML Template
-<img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/Problem.png" width="350"> <img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/Recovery.png" height="400">
-
-### Result - Demo Trigger
-<img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/Demo-Problem.png" width="350"> <img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/Demo%20-%20Recovery.png" width="350">
 
 ## Installation
 
----
-Installation is simple. From Zabbix WebUI, go to `Administration > Media Types > Email (HTML)`
+⏺️ [HTML Templates](./Template/)
 
-<img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/MidiaType.jpeg" width="350">
+↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
 
-Update the `Message Templates` "Problem" and "Problem Recovery"
-
-<img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/MidiaType_Problem.jpeg" width="500"> <img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/Images/MidiaType_Recovery.jpeg" width="500">
+<BR>
 
 
+## Samples
+![Problem E-mail](./Images/problem_email.png)
+<BR>
+![Resolved E-mail](./Images/resolved_email.png)
 
-For more details on Zabbix Media Type configuration, please refer to: [MEDIA TYPES](https://www.zabbix.com/documentation/4.4/manual/config/notifications/media)
+<BR>
+
 
 # ToDo
-
----
-- Add link to Event Details
-- Add a Graph to the problematic item
-
----
-Inspired by: https://github.com/maand75/zabbix-htmlmailtemplates
+- [ ] Add link to Event Details
+- [ ] Add a Graph to the problematic item
