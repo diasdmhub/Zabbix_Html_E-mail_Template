@@ -24,12 +24,13 @@ One possible limitation is the database encoding as [not all emojis are encoded 
 
 
 ## Installation
+> **Copy the template and adjust it to suit your scenario. Then paste it into your media configuration.**
 
 ⏺️ [HTML Templates](./Template/html/)
 
 ⏺️ [Markdown Templates](./Template/markdown/)
 
-↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
+> ↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
 
 <BR>
 
