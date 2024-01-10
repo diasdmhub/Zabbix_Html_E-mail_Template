@@ -25,7 +25,9 @@ One possible limitation is the database encoding as [not all emojis are encoded 
 
 ## Installation
 
-⏺️ [HTML Templates](./Template/)
+⏺️ [HTML Templates](./Template/html/)
+
+⏺️ [Markdown Templates](./Template/markdown/)
 
 ↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
 
