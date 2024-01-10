@@ -8,6 +8,8 @@ This repository contains a set of customizable HTML templates for use with the Z
 
 - [Zabbix DB with UTF-8 encoding](https://www.zabbix.com/documentation/current/en/manual/appendix/install/db_scripts)
 - [Zabbix e-mail Media Type](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media/email) cofigured with the `HTML message format`
+- Define a `{$ZABBIX.URL}` global macro for message links that point to the alerted event.
+  > _The URL should be either an IP address, a fully qualified domain name or localhost. See [MS Teams integration](https://www.zabbix.com/integrations/msteams) for examples._
 
 <BR>
 
