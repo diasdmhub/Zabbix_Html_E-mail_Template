@@ -1,4 +1,4 @@
-# Zabbix HTML E-mail template
+# Zabbix Media Type Message Template
 
 This repository contains a set of customizable HTML and Markdown templates for use with a Zabbix media type.
 
