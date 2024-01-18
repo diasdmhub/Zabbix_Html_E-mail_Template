@@ -1,6 +1,6 @@
 # Zabbix Media Type Message Template
 
-This repository contains a set of customizable HTML and Markdown templates for use with a Zabbix media type.
+This repository contains a set of customizable HTML and Markdown templates for use with a Zabbix media type that support it.
 
 <BR>
 
@@ -16,23 +16,28 @@ This repository contains a set of customizable HTML and Markdown templates for u
 
 ## Customization
 
-You can customize many HTML tags. From the logo, trigger/host information, colors, footer, etc. \
-One possible limitation is the database encoding as [not all emojis are encoded correctly](https://www.zabbix.com/forum/zabbix-cookbook/413606-coloured-html-email-notification-templates) by the database.
+You can customize many tags. From the logo, trigger/host information, colors, footer, etc.
 
-> - **It is recommended to use the HTML entity code for emojis. [EmojiGuide](https://emojiguide.org) can help finding the correct codes.**
+> [!NOTE]
+> Some media types have limited support for markup languages, such as Telegram. It is advisable to experiment and customize the message to fit your scenario. \
+> One possible limitation is the database encoding as [not all emojis are encoded correctly](https://www.zabbix.com/forum/zabbix-cookbook/413606-coloured-html-email-notification-templates) by the database.
+
+> [!TIP]
+> - **For emojis, it is recommended to use the entity codes. [EmojiGuide](https://emojiguide.org) can help finding the correct codes.**
 > - **You can easily test the HTML code with tools such as [↗️ W3 School HTML editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello)**
 
 <BR>
 
 
 ## Installation
-> **Copy the template and adjust it to suit your scenario. Then paste it into your media configuration.**
+> **Copy the template and adjust it to suit your scenario. Then paste it into your media configuration.** \
+> ↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
+
+<BR>
 
 ⏺️ [HTML Templates](./Template/html/)
 
 ⏺️ [Markdown Templates](./Template/markdown/)
-
-> ↗️ [Zabbix Media Type configuration](https://www.zabbix.com/documentation/current/en/manual/config/notifications/media)
 
 <BR>
 
