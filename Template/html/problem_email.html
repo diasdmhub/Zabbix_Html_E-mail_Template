@@ -44,7 +44,7 @@
     </table>
     <div class="light"><h4>EVENT DETAILS</h4></div>
     <table>
-        <tr><td>&#128680; Event:</td>          <td>{EVENT.NAME}</td></tr>
+        <tr><td>&#128680; Event:</td>          <td><a href="{$ZABBIX.URL}/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}">{EVENT.NAME}</a<</td></tr>
         <tr><td>&#9888;&#65039; Severity:</td> <td>{TRIGGER.SEVERITY}</td></tr>
         <tr><td>&#128347; Start:</td>          <td>{EVENT.TIME} from {EVENT.DATE}</td></tr>
         <tr><td>&#128178; Value:</td>          <td>{ITEM.VALUE}</td></tr>
